@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/HTML5.html#/3/18 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>HTML5 - 前端与移动开发学院|传智播客</title>
+  <meta name="description" content="传智播客HTML5课件 by 汪磊 @2015-11-28 00:29:38">
+  <meta name="keywords" content="传智播客,汪磊,HTML5,教程,视频,课程">
+  <meta name="author" content="汪磊 (ice@wedn.net)">
+  <link rel="stylesheet" href="./HTML5 - 前端与移动开发学院_传智播客_files/reveal.css">
+  <link rel="stylesheet" href="./HTML5 - 前端与移动开发学院_传智播客_files/itcast.css">
+  <link rel="stylesheet" href="./HTML5 - 前端与移动开发学院_传智播客_files/solarized_light.css">
+  <link rel="stylesheet" href="./HTML5 - 前端与移动开发学院_传智播客_files/font-awesome.min.css">
+  <!--<base target="_blank">--><base href="." target="_blank">
+  <script>
+    document.write('<link rel="stylesheet" href="' + (window.location.search.match(/print-pdf/gi) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css') + '">');
+  </script><link rel="stylesheet" href="./HTML5 - 前端与移动开发学院_传智播客_files/paper.css">
+</head>
+
+<body>
+  <div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="convex">
+    <div class="slides" style="width: 900px; height: 675px; zoom: 1.18;">
+      <section id="cover" data-background="reveal/img/cover.jpg" style="color: rgb(255, 255, 255); top: 181.5px; display: none;" data-background-image="reveal/img/cover.jpg" class="past" hidden="" aria-hidden="true">
+        <h1>HTML5</h1>
+        <h3>讲师：汪磊</h3>
+        <aside class="notes">
+          讲师：汪磊 QQ：27101514 WeChat：WEDN-NET Email：ice@wedn.net
+        </aside>
+      </section>
+      <section id="intros" data-background="reveal/img/content.jpg" data-background-image="reveal/img/content.jpg" class="stack past" style="top: 0px; display: block;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section class="" style="top: 241px; display: block;" aria-hidden="true">
+          <h2>概述</h2>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 227px; display: none;">
+          <h3>HTML5 ?</h3>
+          <p class="fragment fg-info visible" data-fragment-index="0">Web Development to the <span style="text-decoration:line-through;">next</span> level</p>
+        </section>
+        <section class="text-left future" aria-hidden="true" hidden="" style="top: 18px; display: none;">
+          <h3>Web 技术发展时间线</h3>
+          <hr>
+          <ol>
+            <li class="fragment visible" data-fragment-index="0">1991 HTML</li>
+            <li class="fragment visible" data-fragment-index="1">1994 HTML2</li>
+            <li class="fragment visible" data-fragment-index="2">1996 CSS1 + JavaScript</li>
+            <li class="fragment visible" data-fragment-index="3">1997 HTML4</li>
+            <li class="fragment visible" data-fragment-index="4">1998 CSS2</li>
+            <li class="fragment visible" data-fragment-index="5">2000 XHTML1</li>
+            <li class="fragment visible" data-fragment-index="6">2002 Tableless Web Design</li>
+            <li class="fragment visible" data-fragment-index="7">2005 AJAX</li>
+            <li class="fragment visible" data-fragment-index="8">2009 HTML5</li>
+            <li class="fragment visible" data-fragment-index="9">2014 HTML5 Finalized</li>
+          </ol>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>Review of HTML</h3>
+          <p class="fragment visible" data-fragment-index="0">什么是HTML？</p>
+          <p class="fragment visible" data-fragment-index="1">Hyper Text Markup Language</p>
+          <p class="fragment visible" data-fragment-index="2">什么是超文本标记？</p>
+          <p class="fragment fg-danger visible" data-fragment-index="3">用标记表示比普通文本牛X一点的文本</p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>e.g.</h3>
+          <pre><code data-trim="" contenteditable="" class="hljs handlebars"><span class="xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>标题<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>我是标题<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>我是副标题<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>我叫<span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>汪磊<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>，我在学习HTML5<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></span></code></pre>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>SO ~</h3>
+          <div class="fragment visible" data-fragment-index="0">HTML5是HTML的最新一代版本</div>
+          <p class="fragment visible" data-fragment-index="1">HTML5是用来表示更NB一点的文本<span class="fragment visible" data-fragment-index="2"> ？</span></p>
+          <h3 class="fragment fg-danger visible" data-fragment-index="3">NO ！！！</h3>
+          <p class="fragment fg-danger visible" data-fragment-index="4">这个仅仅可以理解为H5的狭义概念</p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>What is <a href="http://baike.baidu.com/view/951383.htm">HTML5</a></h3>
+          <p class="fragment visible" data-fragment-index="0">H5草案前身</p>
+          <p class="fragment visible" data-fragment-index="1"><span class="label label-primary">Web Application</span></p>
+          <p class="fragment visible" data-fragment-index="2">提出 by <a href="http://baike.baidu.com/view/3863799.htm">WHATWG</a> @2004</p>
+          <p class="fragment visible" data-fragment-index="3">接纳 by <a href="http://baike.baidu.com/view/80669.htm">W3C</a> @2007</p>
+          <p class="fragment visible" data-fragment-index="4">发布HTML5第一个草案 by W3C @2008-01-22</p>
+          <p class="fragment visible" data-fragment-index="5"><span class="label label-primary">HTML5</span> <span class="fg-danger">≠</span>
+            <span class="label label-primary">HTML next version</span></p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>What is HTML5</h3>
+          <p class="fragment visible" data-fragment-index="0"><span class="label label-primary">HTML5</span> ≈ <span class="fragment label label-info visible" data-fragment-index="1">HTML↑</span> + <span class="fragment label label-success visible" data-fragment-index="2">CSS↑</span> + <span class="fragment label label-danger visible" data-fragment-index="3">JavaScript API↑</span>
+          </p>
+          <p class="fragment visible" data-fragment-index="4">广义上：新一代开发Web富客户端应用程序整体解决方案</p>
+          <p class="fragment visible" data-fragment-index="5"><span class="label label-lg label-primary">Structure</span> → <span class="label label-lg label-info">Style</span> → <span class="label label-lg label-success">Interactive</span>
+          </p>
+          <p class="fragment visible" data-fragment-index="6"><span class="label label-lg label-danger">全包了！！！</span></p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>What is Rich Client</h3>
+          <p class="fragment visible" data-fragment-index="0">指具有很强交互性和体验的客户端程序</p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4><a href="http://www.oschina.net/news/40374/web-pages-10-years-ago">十年之前</a></h4>
+          <img class="fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/01.png" data-fragment-index="0">
+          <p class="fragment visible" data-fragment-index="1">just for 内容，没有交互</p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>想要交互、绚丽的效果</h4>
+          <p class="fragment visible" data-fragment-index="0"><span class="label label-lg label-danger">Flash</span></p>
+          <p class="fragment visible" data-fragment-index="1">
+            e.g.
+            <a href="http://moodstream.gettyimages.com/">Moodstream</a>、
+            <a href="http://waterlife.nfb.ca/#/">Waterlife</a>、
+            <a href="https://mono-1.com/monoface/main.html">monoface</a>、
+            <a href="http://buzzorange.com/techorange/2011/04/27/top-ten-2011-flash-designs/">etc.</a>
+          </p>
+          <p class="fragment visible" data-fragment-index="2"><span class="label label-info">被封杀</span> and <span class="label label-success">孤芳自赏</span></p>
+          <p class="fragment visible" data-fragment-index="3">link: <a href="http://www.zhihu.com/question/19728465">关于H5和Flash</a></p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>When HTML5</h4>
+          <img src="./HTML5 - 前端与移动开发学院_传智播客_files/02.png" height="400">
+          <p class="fragment visible" data-fragment-index="0">让Web开发重新回归富客户端的时代</p>
+        </section>
+        <section class="text-left future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>HTML5 的应用场景</h3>
+          <hr>
+          <ul>
+            <li class="fragment visible" data-fragment-index="0">
+              极具表现力的网页
+              <ul>
+                <li class="fragment visible" data-fragment-index="1">案例非常多</li>
+              </ul>
+            </li>
+            <li class="fragment visible" data-fragment-index="2">
+              网页应用程序
+              <ul>
+                <li class="fragment visible" data-fragment-index="3">PC端：iCloud、百度脑图、Office 365···</li>
+                <li class="fragment visible" data-fragment-index="4">APP端：淘宝、京东、美团···</li>
+                <li class="fragment visible" data-fragment-index="5">WeChat端：淘宝、京东、美团···</li>
+              </ul>
+            </li>
+            <li class="fragment visible" data-fragment-index="6">
+              混合式本地应用
+              <ul>
+                <li class="fragment visible" data-fragment-index="7">PC端：网易云音乐、有道词典···</li>
+                <li class="fragment visible" data-fragment-index="8">APP端：淘宝、京东、美团···</li>
+              </ul>
+            </li>
+            <li class="fragment visible" data-fragment-index="9">
+              简单的游戏
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section id="feature" data-background="reveal/img/content.jpg" data-background-image="reveal/img/content.jpg" class="stack past" style="top: 0px; display: block;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section class="text-left" style="top: 141px; display: block;" aria-hidden="true">
+          <h3>HTML5 到底多了点啥？<a href="http://www.w3.org/TR/2014/WD-html5-diff-20140918/"><i class="fa fa-link"></i></a>
+                </h3>
+          <hr>
+          <p class="fragment visible" data-fragment-index="0">我个人将这些变化大体分为三类：</p>
+          <ul>
+            <li class="fragment visible" data-fragment-index="1">HTML</li>
+            <li class="fragment visible" data-fragment-index="2">JavaScript</li>
+            <li class="fragment visible" data-fragment-index="3">CSS</li>
+          </ul>
+        </section>
+        <section class="text-left future" aria-hidden="true" hidden="" style="top: 12.5px; display: block;">
+          <h4>HTML</h4>
+          <hr>
+          <ul class="col-2 fragment visible" data-fragment-index="0">
+            <li>
+              标签
+              <ul>
+                <li>更语义化标签</li>
+                <li>应用程序标签</li>
+              </ul>
+            </li>
+            <li>属性
+              <ul>
+                <li>链接关系描述</li>
+                <li>结构数据标记</li>
+                <li>ARIA</li>
+                <li>自定义属性</li>
+              </ul>
+            </li>
+            <li>
+              智能表单
+              <ul>
+                <li>新的表单类型</li>
+                <li>虚拟键盘适配</li>
+              </ul>
+            </li>
+            <li>
+              网页多媒体
+              <ul>
+                <li>音频</li>
+                <li>视频</li>
+                <li>字幕</li>
+              </ul>
+            </li>
+            <li>
+              Canvas
+              <ul>
+                <li>2D</li>
+                <li>3D (WebGL)</li>
+              </ul>
+            </li>
+            <li>SVG</li>
+          </ul>
+        </section>
+        <section class="text-left future" aria-hidden="true" hidden="" style="top: 12.5px; display: none;">
+          <h4>JavaScript API</h4>
+          <hr>
+          <ul class="col-3 fragment visible" data-fragment-index="0">
+            <li>
+              核心平台提升
+              <ul>
+                <li>新的选择器</li>
+                <li>Element.classList</li>
+                <li>访问历史API</li>
+                <li>全屏API</li>
+              </ul>
+            </li>
+            <li>
+              网页存储
+              <ul>
+                <li>Application Cache</li>
+                <li>localStorage</li>
+                <li>sessionStorage</li>
+                <li>WebSQL</li>
+                <li>IndexedDB</li>
+              </ul>
+            </li>
+            <li>
+              设备信息访问
+              <ul>
+                <li>网络状态</li>
+                <li>硬件访问</li>
+                <li>设备方向</li>
+                <li>地理围栏</li>
+              </ul>
+            </li>
+            <li>
+              拖放操作
+              <ul>
+                <li>网页内拖放</li>
+                <li>桌面拖入</li>
+                <li>桌面拖出</li>
+              </ul>
+            </li>
+            <li>
+              文件
+              <ul>
+                <li>文件系统API</li>
+                <li>FileReader</li>
+              </ul>
+            </li>
+            <li>
+              网络访问
+              <ul>
+                <li>XMLHttpRequest</li>
+                <li>fetch</li>
+                <li>WebSocket</li>
+              </ul>
+            </li>
+            <li>多线程</li>
+            <li>桌面通知</li>
+          </ul>
+        </section>
+        <section class="text-left future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>CSS</h4>
+          <hr>
+          <ul class="col-2 fragment visible" data-fragment-index="0">
+            <li>New Selector</li>
+            <li>Web Fonts</li>
+            <li>Text Styles</li>
+            <li>Opacity</li>
+            <li>HSL Color</li>
+            <li>Rounded Corners</li>
+            <li>Gradients</li>
+            <li>Shadows</li>
+            <li>Background Enhancements</li>
+            <li>Border Image</li>
+            <li>Flexible Box Model</li>
+            <li>Transforms</li>
+            <li>Transitions</li>
+            <li>Animations</li>
+            <li>etc. 后面详细讨论</li>
+          </ul>
+        </section>
+      </section>
+      <section id="practice" data-background="reveal/img/content.jpg" data-background-image="reveal/img/content.jpg" class="stack present" style="top: 0px; display: block;" data-previous-indexv="19">
+        <section class="past" style="top: 253.5px; display: none;" hidden="" aria-hidden="true">
+          <h3>干货来了</h3>
+        </section>
+        <!-- practice.1 HTML 开始 -->
+        <section class="past" style="top: 241px; display: none;" hidden="" aria-hidden="true">
+          <h2>HTML</h2>
+        </section>
+        <section class="past" style="top: 253.5px; display: none;" hidden="" aria-hidden="true">
+          <h3>标签</h3>
+        </section>
+        <!-- practice.1.1 标签 开始 -->
+        <section class="text-left past" style="top: 228px; display: none;" hidden="" aria-hidden="true">
+          <h4>更具有语义化的标签</h4>
+          <hr>
+          <p>就让HTML代码符合内容的结构化，标签语义化</p>
+        </section>
+        <section class="past" style="top: 59px; display: none;" hidden="" aria-hidden="true">
+          <h5>以前我们可能是这样的：</h5>
+          <img class="no-shadow" src="./HTML5 - 前端与移动开发学院_传智播客_files/03.png" alt="传统网页结构">
+        </section>
+        <section class="past" style="top: 59px; display: none;" hidden="" aria-hidden="true">
+          <h5>以后我们一定是这样的：</h5>
+          <a href="file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/demo/html/01-semantic-tags.html" title="Open Demo"><img class="no-shadow" src="./HTML5 - 前端与移动开发学院_传智播客_files/04.png" alt="现代网页结构"></a>
+        </section>
+        <section class="past" style="top: 90.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>为什么要有语义化标签</h4>
+          <p class="fragment fg-success visible" data-fragment-index="0">能够便于开发者阅读和写出更优雅的代码，代码如诗</p>
+          <p class="fragment fg-danger visible" data-fragment-index="1">同时让浏览器或是网络爬虫可以很好地解析，从而更好分析其中的内容</p>
+          <p class="fragment fg-info visible" data-fragment-index="2">更好地搜索引擎优化</p>
+          <p class="fragment visible" data-fragment-index="3">
+            <span class="label label-danger">切记</span>
+            </p><ul class="fragment visible" data-fragment-index="4">
+              <li>HTML的职责是描述一块内容是什么（或其意义）</li>
+              <li>而不是它长的什么样子，它的外观应该由CSS来决定。</li>
+            </ul>
+          <p></p>
+        </section>
+        <section class="past" style="top: 115.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>应用程序标签</h4>
+          <ul>
+            <li class="fragment visible" data-fragment-index="0">DataList(数据列表)</li>
+            <li class="fragment visible" data-fragment-index="1">Progress(进度条)</li>
+            <li class="fragment visible" data-fragment-index="2">Meter(数值显示器)</li>
+            <li class="fragment visible" data-fragment-index="3">
+              <s>Menu(右键菜单)</s>
+            </li>
+            <li class="fragment visible" data-fragment-index="4">
+              <s>Details(明细)</s>
+            </li>
+            <li class="fragment visible" data-fragment-index="5"><a href="file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/demo/html/02-application-tags.html">View Demo</a></li>
+          </ul>
+        </section>
+        <section class="past" style="top: 208px; display: none;" hidden="" aria-hidden="true">
+          <h4>语义化标签 学习目标</h4>
+          <ul>
+            <li class="fragment fg-info visible" data-fragment-index="0">掌握语义化标签的重要性</li>
+            <li class="fragment fg-info visible" data-fragment-index="1">可以正确使用语义化标签</li>
+          </ul>
+        </section>
+        <!-- practice.1.1 标签 结束 -->
+        <section class="past" style="top: 253.5px; display: none;" hidden="" aria-hidden="true">
+          <h3>属性</h3>
+        </section>
+        <!-- practice.1.2 属性 开始 -->
+        <section class="past" style="top: 71.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>链接关系</h4>
+          <p class="fragment visible" data-fragment-index="0"><span class="label label-danger">rel</span></p>
+          <pre class="fragment visible" style="font-size:.6em" data-fragment-index="1"><code data-trim="" contenteditable="" class="hljs livecodeserver">&lt;link <span class="hljs-built_in">rel</span>=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"style.css"</span>&gt;
+&lt;link <span class="hljs-built_in">rel</span>=<span class="hljs-string">"alternate"</span> type=<span class="hljs-string">"application/rss+xml"</span> href=<span class="hljs-string">"http://myblog.com/feed"</span>&gt;
+&lt;link <span class="hljs-built_in">rel</span>=<span class="hljs-string">"shortcut icon"</span> href=<span class="hljs-string">"favicon.ico"</span>&gt;
+&lt;link <span class="hljs-built_in">rel</span>=<span class="hljs-string">"pingback"</span> href=<span class="hljs-string">"http://myblog.com/xmlrpc.php"</span>&gt;
+&lt;link <span class="hljs-built_in">rel</span>=<span class="hljs-string">"prefetch"</span> href=<span class="hljs-string">"http://myblog.com/main.php"</span>&gt;
+...
+
+&lt;<span class="hljs-operator">a</span> <span class="hljs-built_in">rel</span>=<span class="hljs-string">"archives"</span> href=<span class="hljs-string">"http://myblog.com/archives"</span>&gt;old posts&lt;/<span class="hljs-operator">a</span>&gt;
+&lt;<span class="hljs-operator">a</span> <span class="hljs-built_in">rel</span>=<span class="hljs-string">"external"</span> href=<span class="hljs-string">"http://notmysite.com"</span>&gt;tutorial&lt;/<span class="hljs-operator">a</span>&gt;
+&lt;<span class="hljs-operator">a</span> <span class="hljs-built_in">rel</span>=<span class="hljs-string">"license"</span> href=<span class="hljs-string">"http://www.apache.org/licenses/LICENSE-2.0"</span>&gt;license&lt;/<span class="hljs-operator">a</span>&gt;
+&lt;<span class="hljs-operator">a</span> <span class="hljs-built_in">rel</span>=<span class="hljs-string">"nofollow"</span> href=<span class="hljs-string">"http://notmysite.com/sample"</span>&gt;wannabe&lt;/<span class="hljs-operator">a</span>&gt;
+&lt;<span class="hljs-operator">a</span> <span class="hljs-built_in">rel</span>=<span class="hljs-string">"tag"</span> href=<span class="hljs-string">"http://myblog.com/category/games"</span>&gt;games posts&lt;/<span class="hljs-operator">a</span>&gt;
+...</code></pre>
+          <p class="fragment visible" data-fragment-index="2">用来描述指定链接与当前文档的关系，便于机器理解文档结构</p>
+        </section>
+        <section class="past" style="top: 20.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>常见的链接关系表</h4>
+          <table style="font-size:.6em">
+            <tbody><tr>
+              <td>alternate</td>
+              <td>文档的可选版本（例如打印页、翻译页或镜像）</td>
+            </tr>
+            <tr>
+              <td>stylesheet</td>
+              <td>文档的外部样式表</td>
+            </tr>
+            <tr>
+              <td>start</td>
+              <td>集合中的第一个文档</td>
+            </tr>
+            <tr>
+              <td>next</td>
+              <td>集合中的下一个文档</td>
+            </tr>
+            <tr>
+              <td>prev</td>
+              <td>集合中的前一个文档</td>
+            </tr>
+            <tr>
+              <td>contents</td>
+              <td>文档目录</td>
+            </tr>
+            <tr>
+              <td>index</td>
+              <td>文档索引</td>
+            </tr>
+            <tr>
+              <td>glossary</td>
+              <td>文档中所用字词的术语表或解释</td>
+            </tr>
+            <tr>
+              <td>copyright</td>
+              <td>包含版权信息的文档</td>
+            </tr>
+            <tr>
+              <td>chapter</td>
+              <td>文档的章</td>
+            </tr>
+            <tr>
+              <td>section</td>
+              <td>文档的节</td>
+            </tr>
+            <tr>
+              <td>subsection</td>
+              <td>文档的子段</td>
+            </tr>
+            <tr>
+              <td>appendix</td>
+              <td>文档附录</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>帮助文档</td>
+            </tr>
+            <tr>
+              <td>bookmark</td>
+              <td>相关文档</td>
+            </tr>
+            <tr>
+              <td>nofollow</td>
+              <td>用于指定 Google 搜索引擎不要跟踪链接</td>
+            </tr>
+            <tr>
+              <td>licence</td>
+              <td>一般用于文献，表示许可证的含义</td>
+            </tr>
+            <tr>
+              <td>tag</td>
+              <td>标签集合</td>
+            </tr>
+            <tr>
+              <td>friend</td>
+              <td>友情链接</td>
+            </tr>
+          </tbody></table>
+        </section>
+        <section class="past" style="top: 29.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>结构数据标记 * <a href="https://developers.google.com/structured-data/testing-tool/"><i class="fa fa-link"></i></a></h4>
+          <pre class="fragment visible" style="font-size:.6em;width: 560px;" data-fragment-index="0"><code data-trim="" contenteditable="" class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">itemscope</span> <span class="hljs-attribute">itemtype</span>=<span class="hljs-value">"http://example.com/hello"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>我叫<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">itemprop</span>=<span class="hljs-value">"主人"</span>&gt;</span>汪磊<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>。<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    我养了一条叫
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">itemprop</span>=<span class="hljs-value">"狗名"</span>&gt;</span>旺财<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>的
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">itemprop</span>=<span class="hljs-value">"品种"</span>&gt;</span>金毛<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>犬。
+  <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></span></code></pre>
+          <p class="fragment visible" data-fragment-index="1">很高级的东西，只有Google支持</p>
+          <img class="fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/06.png" alt="Google测试结果" height="200" data-fragment-index="2">
+        </section>
+        <section class="past" style="top: 90.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>ARIA 属性 *</h4>
+          <p class="fragment fg-warning visible" data-fragment-index="0">Accessible Rich Internet Application (无障碍富互联网应用程序)</p>
+          <p class="fragment visible" data-fragment-index="1">主要针对于屏幕阅读设备(e.g. NVDA)，更快更好地理解网页</p>
+          <p class="fragment visible" data-fragment-index="2">不仅仅是为了盲人用户，更多语义化</p>
+          <p class="fragment visible" data-fragment-index="3">
+            <i class="fa fa-link"></i>
+            </p><ul class="fragment visible" data-fragment-index="4">
+              <li>
+                <a href="http://www.zhangxinxu.com/wordpress/2012/03/wai-aria-%E6%97%A0%E9%9A%9C%E7%A2%8D%E9%98%85%E8%AF%BB/">WAI-ARIA无障碍网页应用属性完全展示</a>
+              </li>
+              <li><a href="http://tid.tenpay.com/?p=5150">ARIA让视障人士更了解你的页面</a></li>
+            </ul>
+          <p></p>
+        </section>
+        <section class="past" style="top: 139.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>自定义属性 data-*</h4>
+          <p class="fragment visible" data-fragment-index="0">通过DOM存储与DOM对象强相关的数据</p>
+          <pre class="fragment visible" data-fragment-index="1"><code data-trim="" contenteditable="" class="hljs step21">&lt;ul id=<span class="hljs-string">"users"</span>&gt;
+  &lt;li <span class="hljs-keyword">data</span>-id=<span class="hljs-string">"1"</span> <span class="hljs-keyword">data</span>-age=<span class="hljs-string">"18"</span> <span class="hljs-keyword">data</span>-gender=<span class="hljs-string">"true"</span>&gt;张三&lt;/li&gt;
+  &lt;li <span class="hljs-keyword">data</span>-id=<span class="hljs-string">"2"</span> <span class="hljs-keyword">data</span>-age=<span class="hljs-string">"18"</span> <span class="hljs-keyword">data</span>-gender=<span class="hljs-string">"false"</span>&gt;李四&lt;/li&gt;
+  &lt;li <span class="hljs-keyword">data</span>-id=<span class="hljs-string">"3"</span> <span class="hljs-keyword">data</span>-age=<span class="hljs-string">"18"</span> <span class="hljs-keyword">data</span>-gender=<span class="hljs-string">"true"</span>&gt;王二&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          <p class="fragment visible" data-fragment-index="2">DEMO：<a href="file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/demo/html/04-data-attributes.html"><i class="fa fa-link"></i></a></p>
+        </section>
+        <section class="past" style="top: 231.5px; display: none;" hidden="" aria-hidden="true">
+          <h4>新属性 学习目标</h4>
+          <ul>
+            <li class="fragment fg-info visible" data-fragment-index="0">了解而已，以后在国内普及开过后，迅速上手</li>
+          </ul>
+        </section>
+        <!-- practice.1.2 属性 结束 -->
+        <section class="past" style="top: 253.5px; display: block;" hidden="" aria-hidden="true">
+          <h3>智能表单</h3>
+        </section>
+        <!-- practice.1.3 表单 开始 -->
+        <section class="past" style="top: 124px; display: block;" hidden="" aria-hidden="true">
+          <h4>新的表单类型</h4>
+          <pre class="fragment visible" data-fragment-index="0"><code data-trim="" class="hljs vim">&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"text"</span> required&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"email"</span> value=<span class="hljs-string">"some@email.com"</span>&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"date"</span> <span class="hljs-built_in">min</span>=<span class="hljs-string">"2010-08-14"</span> <span class="hljs-built_in">max</span>=<span class="hljs-string">"2011-08-14"</span> value=<span class="hljs-string">"2010-08-14"</span>&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"range"</span> <span class="hljs-built_in">min</span>=<span class="hljs-string">"0"</span> <span class="hljs-built_in">max</span>=<span class="hljs-string">"50"</span> value=<span class="hljs-string">"10"</span>&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"search"</span> results=<span class="hljs-string">"10"</span> placeholder=<span class="hljs-string">"Search..."</span>&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"tel"</span> placeholder=<span class="hljs-string">"(555) 555-5555"</span>
+pattern=<span class="hljs-string">"^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$"</span>&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"color"</span> placeholder=<span class="hljs-string">"e.g. #bbbbbb"</span>&gt;
+&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"number"</span> step=<span class="hljs-string">"1"</span> <span class="hljs-built_in">min</span>=<span class="hljs-string">"-5"</span> <span class="hljs-built_in">max</span>=<span class="hljs-string">"10"</span> value=<span class="hljs-string">"0"</span>&gt;</code></pre>
+          <p class="fragment visible" data-fragment-index="1">DEMO：<a href="file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/demo/html/05-new-form-types.html"><i class="fa fa-link"></i></a></p>
+        </section>
+        <section class="present" style="top: 44px; display: block;">
+          <h4>虚拟键盘适配</h4>
+          <pre class="fragment visible" data-fragment-index="0"><code data-trim="" class="hljs stata">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt_text"</span> id=<span class="hljs-string">"txt_text"</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"number"</span> name=<span class="hljs-string">"txt_number"</span> id=<span class="hljs-string">"txt_number"</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"email"</span> name=<span class="hljs-string">"txt_email"</span> id=<span class="hljs-string">"txt_email"</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"tel"</span> name=<span class="hljs-string">"txt_tel"</span> id=<span class="hljs-string">"txt_tel"</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"url"</span> name=<span class="hljs-string">"txt_url"</span> id=<span class="hljs-string">"txt_url"</span>&gt;</code></pre>
+          <div>
+            <img class="no-shadow fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/input_01.png" alt="text" style="display: inline-block;width: 18%;" data-fragment-index="1">
+            <img class="no-shadow fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/input_02.png" alt="number" style="display: inline-block;width: 18%;" data-fragment-index="2">
+            <img class="no-shadow fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/input_03.png" alt="email" style="display: inline-block;width: 18%;" data-fragment-index="3">
+            <img class="no-shadow fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/input_04.png" alt="tel" style="display: inline-block;width: 18%;" data-fragment-index="4">
+            <img class="no-shadow fragment visible" src="./HTML5 - 前端与移动开发学院_传智播客_files/input_05.png" alt="url" style="display: inline-block;width: 18%;" data-fragment-index="5">
+          </div>
+        </section>
+        <section class="future" style="top: 231.5px; display: block;" hidden="" aria-hidden="true">
+          <h4>智能表单 学习目标</h4>
+          <ul>
+            <li class="fragment fg-info" data-fragment-index="0">网页开发过程中可以针对需求使用特定的智能表单类型</li>
+          </ul>
+        </section>
+        <!-- practice.1.3 表单 结束 -->
+        <section class="future" aria-hidden="true" hidden="" style="top: 227px; display: block;">
+          <h3>网页多媒体</h3>
+          <p class="fragment" data-fragment-index="0">在此之前需要依赖于第三方插件（e.g. flash）</p>
+        </section>
+        <!-- practice.1.4 多媒体 开始 -->
+        <section class="future" aria-hidden="true" hidden="" style="top: 159px; display: none;">
+          <h4>音频</h4>
+          <pre class="fragment" style="width: 550px;" data-fragment-index="0"><code data-trim="" contenteditable="" class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">controls</span>=<span class="hljs-value">"controls"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"img/music.mp3"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"audio/mpeg"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span></span></code></pre>
+          <p class="fragment" data-fragment-index="1">DEMO：</p>
+          <p class="fragment" data-fragment-index="2">
+            <audio controls="controls">
+              <source src="demo/html/music.mp3">
+            </audio>
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>视频</h4>
+          <pre class="fragment" style="width: 660px;" data-fragment-index="0"><code data-trim="" contenteditable="" class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">controls</span>=<span class="hljs-value">"controls"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- 不同浏览器支持格式不一样 --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"fun.ogg"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"video/ogg"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"fun.mp4"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"video/mp4"</span> /&gt;</span>
+  <span class="hljs-comment">&lt;!-- 当浏览器不兼容video标签，就会将他以div方式解析 --&gt;</span>
+  SHIT 你的浏览器不支持！
+<span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span></span></code></pre>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>DEMO：</h4>
+          <video controls="controls" height="380" poster="img/02.png">
+            <source src="demo/html/movie.ogg" type="video/ogg">
+            <!-- 当浏览器不兼容video标签，就会将他以div方式解析 -->
+            SHIT 你的浏览器不支持！
+          </video>
+          <p class="fragment" data-fragment-index="0"><a href="file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/demo/html/08-media-video.html"><i class="fa fa-link"></i></a></p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>属性</h4>
+          <img src="./HTML5 - 前端与移动开发学院_传智播客_files/07.png" class="no-shadow" height="350">
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>兼容方案：</h4>
+          <p><a href="https://html5media.info/">https://html5media.info/</a></p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>字幕 <a href="http://www.w3schools.com/tags/tag_track.asp"><i class="fa fa-link"></i></a></h4>
+          <pre class="fragment" style="width: 600px;" data-fragment-index="0"><code data-trim="" contenteditable="" class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"clip"</span> <span class="hljs-attribute">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"fun.mp4"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"video/mp4"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">track</span> <span class="hljs-attribute">label</span>=<span class="hljs-value">"English subtitles"</span> <span class="hljs-attribute">kind</span>=<span class="hljs-value">"subtitles"</span>
+  <span class="hljs-attribute">srclang</span>=<span class="hljs-value">"en"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"video-subtitles-en.vtt"</span> <span class="hljs-attribute">default</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span></span></code></pre>
+          <p class="fragment" data-fragment-index="1"><a href="file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/demo/html/09-media-track.html"><i class="fa fa-link"></i></a></p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>多媒体 学习目标</h4>
+          <ul>
+            <li class="fragment fg-info" data-fragment-index="0">掌握网页多媒体的意义</li>
+            <li class="fragment fg-info" data-fragment-index="1">对Video标签和Audio标签熟练使用</li>
+            <li class="fragment fg-info" data-fragment-index="2">了解字幕标签</li>
+          </ul>
+        </section>
+        <!-- practice.1.4 多媒体 结束 -->
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>SVG</h3>
+        </section>
+        <!-- practice.1.5 SVG 开始 -->
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>SVG * <a href="http://baike.baidu.com/subview/85022/9539763.htm"><i class="fa fa-link"></i></a></h4>
+          <p class="fragment fg-primary" data-fragment-index="0">Scalable Vector Graphics 可缩放矢量图形</p>
+          <p class="fragment fg-success" data-fragment-index="1">基于可扩展标记语言</p>
+          <p class="fragment fg-info" data-fragment-index="2">优势：体积小，质量高，效果好，可控程度高</p>
+          <p class="fragment" data-fragment-index="3">
+            扩展连接：
+            <a href="http://www.w3schools.com/html/html5_svg.asp">HTML5中的SVG <i class="fa fa-link"></i></a>
+            <a href="http://www.w3schools.com/svg/">SVG <i class="fa fa-link"></i></a>
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>Inline SVG Demo</h4>
+          <svg width="300px" height="300px">
+            <defs>
+              <lineargradient id="g_color" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="5%" stop-color="red"></stop>
+                <stop offset="95%" stop-color="blue" stop-opacity="0.5"></stop>
+              </lineargradient>
+            </defs>
+            <circle class="important" cx="50%" cy="50%" r="100" fill="url(#g_color)" onmousedown="alert(&#39;hello&#39;);"></circle>
+          </svg>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>SVG File</h4>
+          <iframe src="./HTML5 - 前端与移动开发学院_传智播客_files/famoustiger.html" style="border:none; width:430px; height:430px; background: white;"></iframe>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>使用 SVG File 的方式</h4>
+          <ul>
+            <li class="fragment" data-fragment-index="0">使用 &lt;embed&gt; 标签</li>
+            <li class="fragment" data-fragment-index="1">使用 &lt;object&gt; 标签</li>
+            <li class="fragment fg-success" data-fragment-index="2">使用 &lt;iframe&gt; 标签</li>
+            <li class="fragment fg-primary" data-fragment-index="3">Ajax方式加载</li>
+          </ul>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>SVG 学习目标</h4>
+          <ul>
+            <li class="fragment fg-info" data-fragment-index="0">了解SVG是什么东西</li>
+            <li class="fragment fg-info" data-fragment-index="1">可以在网页中使用别人做好的SVG</li>
+            <li class="fragment fg-info" data-fragment-index="2">并可以对SVG文件作出基本调整</li>
+            <li class="fragment fg-info" data-fragment-index="3">会用样式修饰SVG</li>
+          </ul>
+        </section>
+        <!-- practice.1.5 SVG 结束 -->
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>Canvas</h3>
+        </section>
+        <!-- practice.1.6 Canvas 开始 -->
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h3>Canvas</h3>
+          <p class="fragment" data-fragment-index="0">提供网页级画布（GDI+）的实现</p>
+          <p class="fragment" data-fragment-index="1">后面课程详细来说</p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 317.5px; display: none;">
+          <h4>Canvas Demo</h4>
+          <iframe src="./HTML5 - 前端与移动开发学院_传智播客_files/11-canvas.html" frameborder="0" height="400" width="630"></iframe>
+        </section>
+        <!-- practice.1.6 Canvas 结束 -->
+        <!-- practice.1 HTML 结束 -->
+      </section>
+      <section id="polyfill" data-background="reveal/img/content.jpg" data-background-image="reveal/img/content.jpg" class="stack future" style="top: 0px; display: block;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section class="" style="top: 227px; display: block;" aria-hidden="true">
+          <h3>Moderizer</h3>
+          <p>一个JavaScript针对H5特性兼容的探针</p>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="top: 49.5px; display: block;">
+          <h3>About IE</h3>
+          <p class="fragment" data-fragment-index="0">为了尽可能让IE更好地支持HTML5，你可以使用以下两种方式：</p>
+          <ul>
+            <li class="fragment" data-fragment-index="1">Client side:
+              <pre style="font-size:.6em"><code class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">"X-UA-Compatible"</span>
+                            <span class="hljs-attribute">content</span>=<span class="hljs-value">"chrome=1"</span>&gt;</span></span></code></pre>
+            </li>
+            <li class="fragment" data-fragment-index="2">Server side:
+              <pre style="font-size:.6em"><code class="hljs http"><span class="hljs-attribute">X-UA-Compatible</span>: <span class="hljs-string">chrome=1</span></code></pre>
+            </li>
+          </ul>
+          <p class="fragment" data-fragment-index="3">然后尝试一下吧！</p>
+        </section>
+      </section>
+      <section id="review" data-background="reveal/img/content.jpg" data-background-image="reveal/img/content.jpg" hidden="" aria-hidden="true" class="stack future" style="top: 0px; display: block;">
+        <section style="top: 227px; display: block;">
+          <h3>What is HTML5</h3>
+          <p class="fg-success">最新一代的WEB技术，用于构建现代Web应用程序！</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 92px; display: none;">
+          <h4>HTML5 的能力已经覆盖</h4>
+          <ul>
+            <li class="fragment" data-fragment-index="0">Offline / Storage</li>
+            <li class="fragment" data-fragment-index="1">Realtime / Communication</li>
+            <li class="fragment" data-fragment-index="2">File / Hardware Access</li>
+            <li class="fragment" data-fragment-index="3">Semantics &amp; Markup</li>
+            <li class="fragment" data-fragment-index="4">Graphics / Multimedia</li>
+            <li class="fragment" data-fragment-index="5">CSS3</li>
+            <li class="fragment" data-fragment-index="6">Nuts &amp; Bolts</li>
+          </ul>
+        </section>
+      </section>
+      <section id="end" data-background="reveal/img/end.jpg" data-background-image="reveal/img/end.jpg" hidden="" aria-hidden="true" class="future" style="top: 297.5px; display: none;"></section>
+    </div>
+  <div class="backgrounds"><div class="slide-background past" data-background-hash="reveal/img/cover.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: none; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/cover.jpg);"></div><div class="slide-background stack past" data-background-hash="reveal/img/content.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/content.jpg);"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background text-left future" data-loaded="true" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background text-left future" style="display: none;"></div></div><div class="slide-background stack past" data-background-hash="reveal/img/content.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/content.jpg);"><div class="slide-background text-left present" data-loaded="true" style="display: block;"></div><div class="slide-background text-left future" data-loaded="true" style="display: block;"></div><div class="slide-background text-left future" data-loaded="true" style="display: none;"></div><div class="slide-background text-left future" style="display: none;"></div></div><div class="slide-background stack present" data-background-hash="reveal/img/content.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/content.jpg);"><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background text-left past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: none;"></div><div class="slide-background past" data-loaded="true" style="display: block;"></div><div class="slide-background past" data-loaded="true" style="display: block;"></div><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" data-background-hash="reveal/img/content.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/content.jpg);"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div></div><div class="slide-background stack future" data-background-hash="reveal/img/content.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: block; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/content.jpg);"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div></div><div class="slide-background future" data-background-hash="reveal/img/end.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: none; background-image: url(file:///D:/%E4%BC%A0%E6%99%BA%E6%92%AD%E5%AE%A22016/06%20HTML5/HTML5_01/2015-12-03/html5/reveal/img/end.jpg);"></div></div><div class="progress" style="display: none;"><span></span></div><aside class="controls" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up enabled fragmented" aria-label="above slide"></button><button class="navigate-down enabled" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">
+          虚拟键盘适配
+          &lt;input type="text" name="txt_text" id="txt_text"&gt;
+&lt;input type="number" name="txt_number" id="txt_number"&gt;
+&lt;input type="email" name="txt_email" id="txt_email"&gt;
+&lt;input type="tel" name="txt_tel" id="txt_tel"&gt;
+&lt;input type="url" name="txt_url" id="txt_url"&gt;
+          
+            
+            
+            
+            
+            
+          
+        </div></div>
+  <script src="./HTML5 - 前端与移动开发学院_传智播客_files/head.min.js"></script>
+  <script src="./HTML5 - 前端与移动开发学院_传智播客_files/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      width: 900,
+      height: 675,
+      margin: 0.1,
+      minScale: 0.2,
+      maxScale: 1.4,
+      // center: false,
+      // 过渡 // none/fade/slide/convex/concave/zoom
+      transition: 'convex',
+      backgroundTransition: 'convex',
+      // 方向控制器显示
+      controls: true,
+      // 展示进度
+      progress: false,
+      // 页码
+      slideNumber: false,
+      // URL Hash中记住历史
+      history: true,
+      // 链接预览
+      previewLinks: true,
+      keyboard: {
+        13: 'next',
+        112: function() {
+          Reveal.configure({
+            showNotes: !Reveal.getConfig().showNotes
+          });
+        }
+      },
+      dependencies: [{
+        src: 'reveal/plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: 'reveal/plugin/notes/notes.js',
+        async: true
+      }]
+    });
+
+    // 记住历史状态
+    // var state = window.localStorage.getItem('reveal_html5_last_state');
+    // if (state)
+    //   Reveal.setState(JSON.parse(state));
+    // Reveal.addEventListener('slidechanged', function(event) {
+    //   window.localStorage.setItem('reveal_html5_last_state', JSON.stringify(Reveal.getState()));
+    // });
+  </script><script type="text/javascript" src="./HTML5 - 前端与移动开发学院_传智播客_files/highlight.js"></script><script type="text/javascript" src="./HTML5 - 前端与移动开发学院_传智播客_files/notes.js"></script>
+  <!-- <a href="https://css-tricks.com/drag-and-drop-file-uploading/"></a> -->
+
+
+
+</body></html>

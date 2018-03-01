@@ -1,0 +1,252 @@
+/*bootstrapæ‹“å±•æ ·å¼*/
+.btn-zzc { 
+  color: #ffffff; 
+  background-color: #E92322; 
+  border-color: #E83C10; 
+} 
+ 
+.btn-zzc:hover, 
+.btn-zzc:focus, 
+.btn-zzc:active, 
+.btn-zzc.active, 
+.open .dropdown-toggle.btn-zzc { 
+  color: #ffffff; 
+  background-color: #DB3B43; 
+  border-color: #E83C10; 
+} 
+ 
+.btn-zzc:active, 
+.btn-zzc.active, 
+.open .dropdown-toggle.btn-zzc { 
+  background-image: none; 
+} 
+ 
+.btn-zzc.disabled, 
+.btn-zzc[disabled], 
+fieldset[disabled] .btn-zzc, 
+.btn-zzc.disabled:hover, 
+.btn-zzc[disabled]:hover, 
+fieldset[disabled] .btn-zzc:hover, 
+.btn-zzc.disabled:focus, 
+.btn-zzc[disabled]:focus, 
+fieldset[disabled] .btn-zzc:focus, 
+.btn-zzc.disabled:active, 
+.btn-zzc[disabled]:active, 
+fieldset[disabled] .btn-zzc:active, 
+.btn-zzc.disabled.active, 
+.btn-zzc[disabled].active, 
+fieldset[disabled] .btn-zzc.active { 
+  background-color: #E92322; 
+  border-color: #E83C10; 
+} 
+ 
+.btn-zzc .badge { 
+  color: #E92322; 
+  background-color: #ffffff; 
+}
+
+
+
+
+
+.navbar-zzc {
+  background-color: #fff;
+  border-color: #f5f5f5;
+}
+.navbar-zzc .navbar-brand {
+  color: #777;
+  height: 80px;
+}
+.navbar-zzc .navbar-brand:hover,
+.navbar-zzc .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-zzc .navbar-text {
+  color: #777;
+}
+.navbar-zzc .navbar-nav > li > a {
+  color: #777;
+  line-height: 48px;
+  font-size: 14px;
+}
+.navbar-zzc .navbar-nav > li > a:hover,
+.navbar-zzc .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 2px solid #e92322;
+}
+.navbar-zzc .navbar-nav > .active > a,
+.navbar-zzc .navbar-nav > .active > a:hover,
+.navbar-zzc .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: transparent;
+  border-bottom: 2px solid #e92322;
+}
+.navbar-zzc .navbar-nav > .disabled > a,
+.navbar-zzc .navbar-nav > .disabled > a:hover,
+.navbar-zzc .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-zzc .navbar-toggle {
+  border-color: #ddd;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.navbar-zzc .navbar-toggle:hover,
+.navbar-zzc .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-zzc .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-zzc .navbar-collapse,
+.navbar-zzc .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-zzc .navbar-nav > .open > a,
+.navbar-zzc .navbar-nav > .open > a:hover,
+.navbar-zzc .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-zzc .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-zzc .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-zzc .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-zzc .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-zzc .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-zzc .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-zzc .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-zzc .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-zzc .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-zzc .navbar-link {
+  color: #777;
+}
+.navbar-zzc .navbar-link:hover {
+  color: #333;
+}
+.navbar-zzc .btn-link {
+  color: #777;
+}
+.navbar-zzc .btn-link:hover,
+.navbar-zzc .btn-link:focus {
+  color: #333;
+}
+.navbar-zzc .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-zzc .btn-link:hover,
+.navbar-zzc .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-zzc .btn-link:focus {
+  color: #ccc;
+}
+
+/*å­—ä½“å›¾æ ‡*/
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: itcast;
+  font-style: normal;
+}
+.icon-mobilephone::before {
+  content: "\e908";
+  font-size: 13px;
+}
+.icon-telephone::before {
+  content: "\e909";
+  font-size: 15px;
+}
+.icon-logo::before {
+  content: "\e93e";
+}
+
+.icon-icon::before {
+  content: "\e920";
+}
+
+/*åˆå§‹åŒ–*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+@font-face {
+  font-family: 'itcast';
+  src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), 
+  url('../font/MiFie-Web-Font.svg') format('svg'), 
+  url('../font/MiFie-Web-Font.ttf') format('truetype'), 
+  url('../font/MiFie-Web-Font.woff') format('woff');
+}
+/*header*/
+#header {
+	height: 200px;
+	/*background-color:#808080;*/
+}
+#header a {
+	color: #888;
+	text-decoration: none;
+}
+#header>.topbar>.container>.row>div {
+	color:#888;
+	height: 40px;
+	font-size: 12px;
+}
+#header>.topbar>.container>.row>div + div {
+	border-left: 1px solid #c0c0c0;
+}
+#header>.topbar {
+	border-bottom: 1px solid #c0c0c0;
+	height: 40px;
+	line-height: 40px;
+}
+#header >.topbar> .container >.row div {
+	height: 40px;
+	/*background-color: #04f;*/
+}
+/*#header >.topbar> .container >.row div:nth-of-type(2n) {
+	background-color: #f40;
+}*/
+#header .mobile-link img {
+	display: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	top: 20px;
+	z-index: 1001;
+}
+#header .mobile-link:hover img{
+	display: block;
+}
+#header .btn-zzc {
+	color: #fff;
+}
+#header .icon-icon {
+	font-size: 20px;
+	color: #e92322;
+	line-height: 50px;
+	vertical-align: middle;
+}
+#header .icon-logo {
+	font-size: 32px;
+	color:#333;
+	line-height: 50px;
+	vertical-align: middle;
+}
+/*/header*/
+
+section {
+	height: 200px;
+}
+section:nth-of-type(2n){
+	background-color: #e5e5e5;
+}
+
